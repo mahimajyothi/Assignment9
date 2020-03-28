@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Worker{
+	
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter the working hours of worker:");
+    
+    float num = sc.nextFloat();
+    
+    System.out.println("The efficiency level is: ");
+    
+    
+    if(num<=3)
+    {
+        System.out.print("Highly efficient");
+    }
+    
+    else if(num<=4 && num>3)
+    {
+       System.out.print("Improve speed");
+    } 
+    else if(num<=5 && num>4)
+    {
+        System.out.print("Need Training");
+    }
+    else
+    {
+        System.out.print("Leave the company");
+    }
+} 
+}
